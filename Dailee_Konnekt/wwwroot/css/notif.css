@@ -1,0 +1,11 @@
+.Hero {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 100vh;
+    background-color: red;
+    border-left: 1px solid var(--border);
+    justify-content: center;
+    margin-left: 5%;
+    padding: 20px;
+}

@@ -1,0 +1,66 @@
+body {
+    background: var(--bg-color);
+}
+.Hero {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border-left: 1px solid var(--border);
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.HeroProfile{
+    margin-top: 20px;
+    width: 15%;
+}
+
+.HeroContent {
+    margin-top: 20px;
+    width: 70%;
+    height: 100%;
+}
+
+.circle {
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    background-color: white;
+}
+
+.Personal h6{
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Personal .container {
+    display: flex;
+    width: 40%;
+    margin-left: 0;
+    margin-bottom: -10px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.Personal p{
+    font-size: 13px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 200;
+}
+.Personal p span{
+    margin-left: 150px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #edf0f7   ;
+    margin: 10px 0;
+    width: 80%;
+}
