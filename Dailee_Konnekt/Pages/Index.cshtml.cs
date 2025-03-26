@@ -7,14 +7,15 @@ namespace Dailee_Konnekt.Pages
     {
         [BindProperty]
         public string Username { get; set; }
+
         [BindProperty]
         public string Password { get; set; }
-        public string ErrorMessage { get; set; }
 
+        public string ErrorMessage { get; set; }
 
         public IActionResult OnPost()
         {
-            if (Username == "Username" && Password == "Password")
+            if (Username == "Username" && Password == "123") 
             {
                 return RedirectToPage("/Home");
             }

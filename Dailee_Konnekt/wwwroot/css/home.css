@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     width: 100%;
-
 }
 .Hero {
     display: flex;
@@ -61,7 +69,6 @@ p {
 .insta-post {
     width: 600px;
     color: white;
-    font-family: Arial, sans-serif;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 150px;

@@ -1,9 +1,10 @@
 ﻿@page
-@model IndexModel
+@model Dailee_Konnekt.Pages.IndexModel
 @{
     ViewData["Title"] = "Home page";
     ViewData["ExcludeNav"] = true;
 }
+
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
@@ -11,45 +12,37 @@
 </head>
 
 <body>
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="card shadow-lg p-4 text-center" style="width: 26rem; border-top: 5px solid #333;">
-        <img src="images/dk-removebg-preview(1).png" alt="DaileeKonnekt Logo" class="mb-3" style="width: 80px;">
-
-        <h3 class="fw-bold">
-            <span style="color: #C69234;">Dailee</span><span style="color: #333;">Konnekt</span>
-        </h3>
-        <p class="text-muted">Login to your account</p>
-
-        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-        {
-            <div class="alert alert-danger p-2" role="alert">
-                <span class="material-icons align-middle">error</span> @Model.ErrorMessage
-            </div>
-        }
+    <div class="Hero">
+    <div class="login-container">
+        <h1>Log in with your Instagram account</h1>
 
         <form method="post">
-            <div class="mb-3 input-group">
-                <span class="input-group-text">
-                    <span class="material-icons">person</span>
-                </span>
-                <input type="text" name="Username" class="form-control" placeholder="Username" required>
-            </div>
+            <input type="text" class="input-field" placeholder="Username, phone or email" asp-for="Username">
+            <input type="password" class="input-field" placeholder="Password" asp-for="Password">
 
-            <div class="mb-3 input-group">
-                <span class="input-group-text">
-                    <span class="material-icons">lock</span>
-                </span>
-                <input type="password" name="Password" class="form-control" placeholder="Password" required>
-            </div>
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <p class="error-message">@Model.ErrorMessage</p>
+            }
 
-            <button type="submit" class="btn w-100 text-white" style="background-color: #333;">
-                <span class="material-icons align-middle">login</span> Login
-            </button>
-
-            <div class="text-center mt-3">
-                <small>Don't have an account? <a asp-page="Index" class="fw-semibold" style="color: #333;">Sign Up</a></small>
-            </div>
+            <button type="submit" class="login-btn">Log in</button>
         </form>
+
+        <a href="#" class="forgot-password">Forgot password?</a>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-text">or</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <button class="instagram-btn">
+            <div class="instagram-logo">
+                <div class="instagram-logo-inner"></div>
+            </div>
+            Continue with Instagram
+            <span class="arrow-icon">›</span>
+        </button>
     </div>
-</div>
+   </div>
 </body>

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 ::-webkit-scrollbar {
     width: 2px;
     height: 2px;
@@ -19,7 +28,7 @@
     --card-color: rgb(16, 16, 16);
     --text-color: rgb(229, 218, 218);
     --bg-color: #0A0A0A;
-    --icon: #adb5bd;
+    --icon: #6c757d;
     --border: #333;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
